@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+
+    <head>
+        <title>Node.js express mongDB CRUD</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            div{
+                max-width: 100%;
+                background-color: rgb(241, 227, 227);
+                margin: auto;
+                padding: 23px;
+            }
+            </style>
+    </head>
+    
+
+<body>
+
+    <h2 id="heading_2"> Enter your credentials </h2>
+
+    <div>
+
+        <form method="POST">
+            <input id="id_1" placeholder="id" />
+
+            <input id="usename_1" placeholder="Username" />
+
+            <input id="email_1" placeholder="email" />
+
+            <input id="password_1" placeholder="Password" type="password" />
+
+            <button type="submit" id="insert_button" value="insert"> insert record </button>
+        </form>
+
+    </div>
+
+
+
+    <div>
+
+        <form method="POST">
+            <input id="id_2" placeholder="id" />
+
+            <input id="usename_2" placeholder="Username" />
+
+            <input id="email_2" placeholder="email" />
+
+            <input id="password_2" placeholder="Password" type="password" />
+
+            <button type="submit" id="update_button" value="update"> update record </button>
+        </form>
+    </div>
+
+
+    
+    <div>
+       
+        <form method="POST">
+            <input id="id_3" name= "id" placeholder= "id" />
+    
+            <button type="submit" name= "delete_btn" value="delete"> delete record </button>
+        </form>
+    </div>
+  
+    
+    <div>
+       
+        <form method="POST">
+            <input id="id_4" name= "username" placeholder= "Username" />
+    
+            <input id="password" name= "password" placeholder= "password" />
+    
+            <button type="submit" name= "login_btn" value="login"> Log In </button>
+        </form>
+    </div>
+  
+
+    <table>
+        <th> Delete </th>
+        
+        <tr>
+            <td>
+                <form method="POST"> 
+                    <button type="submit" name="delete_btn" class="btn btn-danger"> 
+                         <i class="fa fa-trash-o" aria-hidden="true"></i> 
+                    </button> 
+                </form>
+       
+            </td>
+        </tr>
+    </table>
+        
+   
+</body>
+
+</html>
